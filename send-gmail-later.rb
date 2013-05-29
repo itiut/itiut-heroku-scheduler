@@ -4,7 +4,7 @@ require 'gmail'
 USERNAME = ENV['GOOGLE_USERNAME']
 PASSWORD = ENV['GOOGLE_PASSWORD']
 
-PATTERN = /^\[(\d+d)?(\d+h)?(\d+m)?\] /
+PATTERN = /^\[(\d+d)?(\d+h)?(\d+m)?\] */
 
 Gmail.new(USERNAME, PASSWORD) do |gmail|
   now = DateTime.now
